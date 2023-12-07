@@ -21,7 +21,7 @@ Slug.getLayout = function getLayout(page: ReactElement) {
     <ContentWrapper>
       <Header />
       {page}
-      <Footer menu={page?.props?.footer?.links} text={page?.props?.footer?.text}/>
+      <Footer menu={page?.props?.footer?.links} text={page?.props?.footer}/>
     </ContentWrapper>
   );
 };

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import {LinkType} from '@suncel/nextjs';
 import Link from 'next/link';
@@ -36,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ menu, text }) => {
                         Flowbite
                     </a>
                     <p className="my-6 text-gray-500 dark:text-gray-400">
-                        {text}
+                        {text.text}
                     </p>
                     <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
                         {menu?.map((e: any,id: any)=>{
